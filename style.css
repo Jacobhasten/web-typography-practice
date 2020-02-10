@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "20-db";
+    src: url(./20db-webfont.woff) format(woff);
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    font-family: "20-db", sans-serif;
+}
+body > * {
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+.items {
+    display: flex;
+    flex-direction: column;
+}
+.item {
+    background: white;
+    border-radius: 3px;
+}
+footer {
+    display: flex;
+}
+footer .column {
+    width: 33.33%;
+}
+footer a {
+    text-decoration: none;
+    color: gray;
+}
+@media (min-width: 650px) {
+    body > * {
+        box-sizing: border-box;
+        font-size: 1.25rem;
+    }
+    .items {
+        flex-direction: row;
+    }
+    .item {
+        background: white;
+        margin: 0 10px;
+    }
+}
